@@ -34,7 +34,7 @@ class StdComplex extends Complex {
 	@Override
 	public String toString() {
 		if (this.re() == 0) {
-			return this.im() + "j";
+			return "("+this.im() + "j"+")";
 		}
 		StringBuilder repr = new StringBuilder("(");
 

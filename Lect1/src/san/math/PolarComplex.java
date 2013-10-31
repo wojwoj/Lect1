@@ -33,7 +33,7 @@ class PolarComplex extends Complex {
 
   @Override
   public String toString() {
-    return this.modulus() + "∠" + this.argument();
+    return "("+this.modulus() + "∠" + this.argument()+")";
   }
 
   @Override
