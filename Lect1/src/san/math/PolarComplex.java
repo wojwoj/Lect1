@@ -53,13 +53,13 @@ class PolarComplex extends Complex {
 
 @Override
 public Complex substract(Complex other) {
-	// TODO Auto-generated method stub
-	return null;
+    return this.asCarthesian().substract(other).asPolar();
+
 }
 
 @Override
 public Complex multiply(Complex other) {
-	return (new StdComplex(this.re()*other.re() -this.im()*other.im() , this.re()*other.im()+this.im()*other.re())).asPolar();
+	return this.asCarthesian().multiply(other.asCarthesian()).asPolar();
 }
 
 @Override
