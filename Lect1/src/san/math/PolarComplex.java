@@ -51,5 +51,27 @@ class PolarComplex extends Complex {
     return this;
   }
 
+@Override
+public Complex substract(Complex other) {
+	// TODO Auto-generated method stub
+	return null;
+}
+
+@Override
+public Complex multiply(Complex other) {
+	return (new StdComplex(this.re()*other.re() -this.im()*other.im() , this.re()*other.im()+this.im()*other.re())).asPolar();
+}
+
+@Override
+public Complex devide(Complex other) {
+	return this.asCarthesian().devide(other.asCarthesian()).asPolar();
+	}
+
+@Override
+public Complex conjugate() {
+	// TODO Auto-generated method stub
+	return new PolarComplex(this.modulus(), this.argument()*(-1));
+}
+
   
 }

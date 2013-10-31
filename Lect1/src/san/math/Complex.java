@@ -26,6 +26,10 @@ public abstract class Complex {
   public abstract String toString();
 
   public abstract Complex add(Complex other);
+  public abstract Complex substract(Complex other);
+  public abstract Complex multiply(Complex other);
+  public abstract Complex devide(Complex other);
+  public abstract Complex conjugate();
   
   public abstract Complex asCarthesian();
   
